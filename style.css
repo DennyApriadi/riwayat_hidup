@@ -1,0 +1,249 @@
+*, body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #7391C8;
+}
+
+/* style header */
+header h1 {
+    background-color: #E3E7F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45vh;
+}
+
+header img {
+    width: 15%;
+    position: relative;
+    box-shadow: 3px 6px 10px 0px gray;
+    border: 0.5px solid black;
+    border-radius: 100px;
+}
+
+/* style Navigasi */
+nav {
+    background-color: #BDC6D9;
+ }
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.li {
+    display: flex;
+    justify-content: center;
+}
+
+.li > a {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #7391C8;
+    text-decoration: none;
+    list-style-type: none; 
+    font-size: 15px;
+    color: black;
+    margin: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.li > a:hover {
+    background-color: #52688F;
+}
+
+/* style contain */
+main {
+    padding: 10px;
+    float: left;
+    width: 60%;
+    overflow: auto;
+    background-color: #E3E7F1;
+}
+
+h1, h2 {
+    text-shadow: 3px 4px 4px gray;
+}
+
+.shadow {
+    box-shadow: 0 4px 4px 0 grey;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+ 
+.hardSkill {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 4px 6px 4px 0 grey;
+    background-color: #BDC6D9;
+    width: 40%;
+    position: relative;
+    top: 20px;
+    overflow: auto;
+}
+
+.softSkill {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 4px 6px 4px 0 grey;
+    background-color: #BDC6D9;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    bottom: 45px;
+}
+
+.smk {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 4px 6px 4px 0 grey;
+    background-color: #BDC6D9;
+    width: 95%;
+    position: relative;
+    left: 20px;
+}
+
+.smp {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 4px 6px 4px 0 grey;
+    background-color: #BDC6D9;
+    width: 95%;
+    position: relative;
+    left: 20px;
+}
+
+.sd {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 4px 6px 4px 0 grey;
+    background-color: #BDC6D9;
+    width: 95%;
+    position: relative;
+    left: 20px;
+}
+
+/* conatc */
+.contac {
+    margin-right: 30px;
+    float: right;
+    width: 35%;
+    height: 50vh;
+    margin-top: 25px;
+    background-color: #E3E7F1;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.namaContac {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+    
+}
+
+.link > a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    border: 2px solid black;
+    background-color: #7391C8;
+    border-radius: 10px;
+    margin: 5px 10px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+
+.link >a >img {
+    height: 20px;
+    position: relative;
+    right: 120px;
+}
+
+#em {
+    position: relative;
+    right: 138px;
+}
+
+.link > a:hover {
+    background-color: #52688F;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    background-color: #BDC6D9;
+    text-align: center;
+    font-weight: 500;
+    overflow: auto;
+}
+
+/* media */
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+    header img {
+        width: 40%;
+    }
+    .li > a {
+        padding: 7px;
+        margin: 5px;
+        font-size: 13px;
+    }
+    .softSkill {
+        bottom: 70px;
+    }
+    .contac {
+        width: 100%;
+        position: relative;
+        left: 30px;
+        margin-bottom: 20px;
+    }
+    .link a {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .link >a >img {
+        position: relative;
+        right: 0;
+    }
+    #em {
+        position: relative;
+        right: 15px;
+    }
+}
